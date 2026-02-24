@@ -1,0 +1,120 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#sidecolumn{
+    height: 100%;
+    width: 8%;
+    background-color: rgb(106, 195, 230);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#logo{
+    height: 10%;
+    width: 100%;
+    margin: 4%;
+    border-radius: 10px;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#quote{
+    height: 90%;
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mainquote{
+    width: 200px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 25px;
+    color: white;
+    
+}
+h1:hover{
+    cursor: pointer; 
+    animation: mymove 0.5s forwards; 
+}
+@keyframes mymove {
+    from {color: white;
+          font-size: 25px;}
+    to {color: black;
+          font-size: 3rem;}    
+}
+#mainpart{
+    height: 100%;
+    width: 92%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(0turn, grey, black);
+}
+#heading{
+    height: 50%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+#bada{
+    margin: 22% 0% 0% 11%;
+    padding: 0px;
+    height: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chota{
+    margin: 0% 0% 0% 5%;
+    padding: 0px;
+    height: 80px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    height: 25%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10% 0% 0% 6%;
+}
+#addtocart{
+    height: 60px;
+    width: 150px;
+    background-color: rgb(106, 195, 230);
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+}
+#discription{
+    width: 30%;
+    margin-left: 9%;
+}
+#shoeimage{
+    height: 850px;
+    width: 1200px;
+    margin-left: 15%;
+    margin-top: -40%;
+    padding: 0%;
+    rotate: -25deg;
+}
