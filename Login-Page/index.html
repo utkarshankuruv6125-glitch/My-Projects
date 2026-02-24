@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <h2 id="logo">Logo</h2>
+        <div class="nav">
+        <p id="home">Home</p>
+        <p id="about">About</p>
+        <p id="services">Services</p>
+        <p id="contact">Contact</p>
+        <button id="loginbtn">Login</button>
+        </div>
+    </div>
+    <div class="loginpopup">
+        <div id="closebtn">
+            <span class="close">&times;</span>
+        </div>
+        <h2 id="heading">Login</h2>
+        <form>
+            <div class="email-container">
+                <input type="text" id="email" placeholder="Email" required >
+                <img src="email.png" class="email-icon" alt="Email" width="20">
+            </div>
+            
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <img src="padlock.png" class="password-icon" alt="Password" width="20">
+            </div>
+            <div class="extra">
+                <label>
+                    <input type="checkbox" id="remember-me"> Remember Me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit" id="submit">Login</button>
+            <div class="waytoregister">
+                <p>Don't have an account? <a href="#" id="registerbtn">Register</a> </p>
+            </div>
+        </form>
+    </div>
+    <div class="registerpopup">
+        <div id="closebtn2">
+            <span class="close2">&times;</span>
+        </div>
+        <h2 id="heading">Register</h2>
+        <form>
+            <div class="username-container">
+                <input type="text" id="username" placeholder="Username" required >
+                <img src="user.png" class="user-icon" alt="username" width="20">
+            </div>
+            <div class="email-container">
+                <input type="text" id="email" placeholder="Email" required >
+                <img src="email.png" class="email-icon" alt="Email" width="20">
+            </div>
+            
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <img src="padlock.png" class="password-icon" alt="Password" width="20">
+            </div>
+            <div class="extra">
+                <label>
+                    <input type="checkbox" id="remember-me"> Remember Me
+                </label>
+            </div>
+            <button type="submit" id="submit">Register</button>
+            <div class="waytologin">
+                <p>Already have an account? <a href="#" id="loginbtn2">Login</a> </p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

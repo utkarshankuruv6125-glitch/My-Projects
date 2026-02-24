@@ -1,0 +1,364 @@
+html body{
+    height: 100vh;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url('deeerpic.jpg');
+    background-size: cover;
+    object-fit: cover;
+}
+.header{
+    height: 86px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+#logo{
+    height: 40px;
+    width: 40px;
+    margin-left: 50px;
+    padding: 0%;
+    color: white;
+    cursor: none;
+}
+.nav{
+    height: 80px;
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 650px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#loginbtn{
+    height: 40px;
+    width: 100px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+    background: transparent;
+}
+#loginbtn:hover{
+    background-color: white;
+    color: black;
+    animation: slideOut 0.3s forwards ease-in-out;
+}
+@keyframes slideOut {
+    from {
+        opacity: 0;
+        height: 40px;
+        width: 100px;
+    }
+    to {
+        opacity: 1;
+        height: 50px;
+        width: 120px;
+    }
+}
+#home{
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+#home::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+#home:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#about{
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+#about::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+#about:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#services{
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+#services::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+#services:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#contact{
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+#contact::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+#contact:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.loginpopup{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    height: 480px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.loginpopup.active{
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.registerpopup{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    height: 480px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.registerpopup.active{
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+#closebtn{
+    height: 50px;
+    width: 50px;
+    margin-left: 350px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(1, 68, 26);
+}
+.close{
+    color: white;
+    font-size: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#heading{
+    font-style: bold;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.email-container {
+    position: relative;
+    width: 325px;
+    height: 30px;
+    background: transparent;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+}
+#email {
+    padding-right: 76px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+::-webkit-input-placeholder{
+    color: black
+}
+.email-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.password-container {
+    position: relative;
+    width: 325px;
+    height: 30px;
+    margin-top: 12px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+}
+
+#password {
+    padding-right: 76px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+::-webkit-input-placeholder{
+    color: black
+}
+.password-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.extra{
+    margin-top: 15px;
+    font-size: small;
+}
+#remember-me {
+    color: black;
+}
+.forgot-password {
+    margin-left: 115px;
+    text-decoration: none;
+    color: black;
+}
+#submit {
+    margin-top: 25px;
+    width: 335px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(1, 68, 26);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.waytoregister{
+    margin-top: 25px;
+    padding-left: 45px;
+    color: black;
+}
+#registerbtn{
+    text-decoration: none;
+    font-style: bold;
+    font-size: large;
+    color: rgb(1, 68, 26);
+}
+.username-container {
+    position: relative;
+    width: 325px;
+    height: 30px;
+    background: transparent;
+    margin-top: 4px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+}
+#username {
+    padding-right: 76px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+::-webkit-input-placeholder{
+    color: black
+}
+.user-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+#closebtn2{
+    height: 50px;
+    width: 50px;
+    margin-left: 350px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(1, 68, 26);
+}
+.close2{
+    color: white;
+    font-size: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.waytologin{
+    margin-top: 15px;
+    padding-left: 45px;
+    color: black;
+}
+#loginbtn2{
+    text-decoration: none;
+    font-style: bold;
+    font-size: large;
+    color: rgb(1, 68, 26);
+}
