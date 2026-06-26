@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputbox" readonly>
+        <div>
+        <button class="Operator" onclick="currentDisplay = ''; document.querySelector('#inputbox').value = currentDisplay;">AC</button>
+        <button class="Operator" onclick="currentDisplay = currentDisplay.slice(0, -1); document.querySelector('#inputbox').value = currentDisplay;">DEL</button>
+        <button class="Operator" onclick="currentDisplay += '%'; document.querySelector('#inputbox').value = currentDisplay;">%</button>
+        <button class="Operator" onclick="currentDisplay += '/'; document.querySelector('#inputbox').value = currentDisplay;">/</button>
+        </div>
+        <div>
+        <button class="sankhya" onclick="currentDisplay += '7'; document.querySelector('#inputbox').value = currentDisplay;">7</button>
+        <button class="sankhya" onclick="currentDisplay += '8'; document.querySelector('#inputbox').value = currentDisplay;">8</button>
+        <button class="sankhya" onclick="currentDisplay += '9'; document.querySelector('#inputbox').value = currentDisplay;">9</button>
+        <button class="Operator" onclick="currentDisplay += '*'; document.querySelector('#inputbox').value = currentDisplay;">*</button>
+        </div>
+        <div>
+        <button class="sankhya" onclick="currentDisplay += '4'; document.querySelector('#inputbox').value = currentDisplay;">4</button>
+        <button class="sankhya" onclick="currentDisplay += '5'; document.querySelector('#inputbox').value = currentDisplay;">5</button>
+        <button class="sankhya" onclick="currentDisplay += '6'; document.querySelector('#inputbox').value = currentDisplay;">6</button>
+        <button class="Operator" onclick="currentDisplay += '-'; document.querySelector('#inputbox').value = currentDisplay;">-</button>
+        </div>
+        <div>
+        <button class="sankhya" onclick="currentDisplay += '1'; document.querySelector('#inputbox').value = currentDisplay;">1</button>
+        <button class="sankhya" onclick="currentDisplay += '2'; document.querySelector('#inputbox').value = currentDisplay;">2</button>
+        <button class="sankhya" onclick="currentDisplay += '3'; document.querySelector('#inputbox').value = currentDisplay;">3</button>
+        <button class="Operator" onclick="currentDisplay += '+'; document.querySelector('#inputbox').value = currentDisplay;">+</button>
+        </div>
+        <div>
+        <button class="haww">00</button>
+        <button class="sankhya" onclick="currentDisplay += '0'; document.querySelector('#inputbox').value = currentDisplay;">0</button>
+        <button class="haww" onclick="currentDisplay += '.'; document.querySelector('#inputbox').value = currentDisplay;">.</button>
+        <button class="equalbtn" onclick="document.querySelector('#inputbox').value = eval(currentDisplay); currentDisplay = document.querySelector('#inputbox').value;">=</button>
+        </div>
+    </div>
+    <script>
+        let currentDisplay = '';
+        document.querySelector("#inputbox").value = currentDisplay;
+    </script>
+</body>
+</html>
